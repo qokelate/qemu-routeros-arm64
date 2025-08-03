@@ -19,6 +19,9 @@ nmcli connection modify "$name" ipv4.method disabled
 nmcli connection up "$name"
 # ifconfig "$name" up
 
+# 添加网卡到桥
+#nmcli connection add type bridge-slave ifname eth0 master br-wan
+
 # 查看当前连接
 nmcli connection show
 
