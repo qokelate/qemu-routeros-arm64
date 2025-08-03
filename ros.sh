@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -x
 
 s=`realpath "$0"`
 cd "$(dirname "$s")"
